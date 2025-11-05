@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Mon<span>Portfolio</span></div>
+    <ul class="nav-links">
+      <li><a href="#accueil" class="active">Accueil</a></li>
+      <li><a href="#apropos">À propos</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+  <!-- Section Accueil -->
+  <section id="accueil" class="hero">
+    <div class="hero-content">
+      <h1>Bonjour, je suis <span>Noupiatche Tchounga Marc Etienne</span></h1>
+      <p>Développeur Web & Designer</p>
+      <a href="#projets" class="btn">Voir mes projets</a>
+    </div>
+  </section>
+
+  <!-- Section À propos -->
+  <section id="apropos" class="about">
+    <h2>À propos de moi</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Passionné par le développement web, je crée des expériences numériques modernes, rapides et esthétiques.</p>
+        <p>Compétences : HTML, CSS, JavaScript, React, Node.js, UI/UX Design.</p>
+      </div>
+      <div class="skills">
+        <div class="skill">
+          <span>HTML/CSS</span>
+          <div class="progress"><div style="width: 90%;"></div></div>
+        </div>
+        <div class="skill">
+          <span>JavaScript</span>
+          <div class="progress"><div style="width: 85%;"></div></div>
+        </div>
+        <div class="skill">
+          <span>React</span>
+          <div class="progress"><div style="width: 75%;"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Projets -->
+  <section id="projets" class="projects">
+    <h2>Mes projets</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="project-img" style="background: #4a90e2;"></div>
+        <h3>Site E-commerce</h3>
+        <p>Plateforme de vente en ligne avec panier et paiement sécurisé.</p>
+        <a href="#" class="btn-small">Voir le projet</a>
+      </div>
+      <div class="project-card">
+        <div class="project-img" style="background: #50c878;"></div>
+        <h3>Application Météo</h3>
+        <p>App en temps réel avec API OpenWeather.</p>
+        <a href="#" class="btn-small">Voir le projet</a>
+      </div>
+      <div class="project-card">
+        <div class="project-img" style="background: #f39c12;"></div>
+        <h3>Portfolio Interactif</h3>
+        <p>Site personnel animé avec Three.js.</p>
+        <a href="#" class="btn-small">Voir le projet</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact" class="contact">
+    <h2>Contactez-moi</h2>
+    <p>Email : <a href="mailto:alex@example.com">marcnoupiatche@example.com</a></p>
+    <p>LinkedIn : <a href="#" target="_blank">linkedin.com/in/marcnoupiatche</a></p>
+    <p>GitHub : <a href="#" target="_blank">github.com/marcnoupiatche</a></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
