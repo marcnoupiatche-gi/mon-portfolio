@@ -1,0 +1,8 @@
+# Ignore les fichiers inutiles dans l'image Docker
+node_modules
+.git
+.gitignore
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
