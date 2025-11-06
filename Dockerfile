@@ -1,4 +1,4 @@
-# Utilise une image Nginx légère comme base
+# Utilise une image Nginx légère comme base des bases
 FROM nginx:alpine
 
 # Copie tous les fichiers du site dans le dossier web de Nginx
