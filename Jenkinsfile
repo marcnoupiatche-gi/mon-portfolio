@@ -72,12 +72,11 @@ Image poussée : ${DOCKER_IMAGE}:${env.BUILD_NUMBER}
 Lien site : <${siteUrl}|Ouvrir le site>  
 Console : <${env.BUILD_URL}|Voir logs>
 """
-                        // Ouvre le navigateur automatiquement
-                        if (isUnix()) {
-                            sh "xdg-open ${siteUrl} || true"
-                        } else {
-                            bat "start ${siteUrl}"
-                        }
+                        
+                       // Ouvre le navigateur sur Windows + WSL
+sh '''
+    powershell.exe -Command "Start-Process http://localhost:8081"
+'''
                     }
                 }
                 always {
