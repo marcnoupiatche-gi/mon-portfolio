@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        SITE_PORT = '8081'  // Port différent pour ton site (change si besoin)
+        SITE_PORT = '8083'  // Port différent pour ton site (change si besoin)
         DOCKER_IMAGE = 'marcnoupiatche/mon-portfolio'  // Nom de ton image Docker (ex. : user/repo)
         DOCKER_REGISTRY = 'https://index.docker.io/v1/'  // Docker Hub par défaut
         DOCKER_CREDENTIALS = 'docker-hub-creds'  // ID de tes creds dans Jenkins (ajoute-les via Manage Credentials > Secret text avec user/pass Docker)
